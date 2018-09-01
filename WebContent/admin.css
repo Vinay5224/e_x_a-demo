@@ -1,0 +1,305 @@
+
+button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: white; 
+    color:#008CBA ; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+.container12 {
+	 width:485px; height: 200px; overflow-y: scroll;overflow-x:hidden; padding: 0 15px 0 15px;
+	 }
+
+
+div.accordion {
+    background-color: white;
+    color: #008CBA;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+/* div.accordion.active, div.accordion:hover {
+    background-color: white;
+    content: '+';  
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    background-color: rgba(79, 188, 206, 0.85);
+    color: white;
+    font-weight: bold;
+}
+
+div.accordion.active:after {
+    content: "-"; 
+    
+} */
+div.accordion.active, div.accordion:hover {
+    background-color: rgba(79, 188, 206, 0.85);color: white;
+}
+
+div.accordion:after {
+    content: '';
+    color: #777;
+    font-weight: bold;
+    font-size:15px;
+    float: right;
+    margin-left: 5px;
+}
+
+div.accordion.active:after {
+    content: "";
+    font-size:15px;
+}
+
+
+div.panel1 {
+    padding: 0 18px;
+   
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  /*  background-color: rgba(72, 201, 176, 0.25); */
+  background-color:rgba(79, 188, 206, 0.50);
+}
+
+ 
+
+
+/* The ReportsLabel */
+.ReportsLabel {
+    
+    position: relative;
+    padding-left: 10px;
+   margin-top: 5px;
+    cursor: pointer;
+   
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.ReportsLabel input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+    top: 4px;
+    left: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: #a7dee7;
+}
+
+/* On mouse-over, add a grey background color */
+.ReportsLabel:hover input ~ .checkmark {
+    background-color: #6ac6d5;
+}
+
+/* When the checkbox is checked, add a blue background */
+.ReportsLabel input:checked ~ .checkmark {
+    background-color: #1fa2e8;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.ReportsLabel input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.ReportsLabel .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+#style-6::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+/**  STYLE 5 */
+#style-6::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;border-radius: 10px;
+}
+
+#style-6::-webkit-scrollbar-thumb {
+	background-color: #0ae;
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                  color-stop(.5, rgba(255, 255, 255, .2)),
+					          color-stop(.5, transparent), to(transparent));
+}
+
+
+/* The container_chk */
+.container_chk {
+   
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+   
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_chk input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container_chk:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_chk input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container_chk input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_chk .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.bs-callout {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+
+*.bs-callout:empty {
+   padding: 5px;
+   margin: 0px;
+   border: none;   
+}
+
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
